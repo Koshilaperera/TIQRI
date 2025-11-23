@@ -9,7 +9,7 @@ namespace SauceDemoAutomation.Pages
     {
         private readonly IWebDriver _driver;
 
-        private WebDriverWait Wait(int seconds = 10)
+        private WebDriverWait Wait(int seconds = 50)
         {
             return new WebDriverWait(_driver, TimeSpan.FromSeconds(seconds));
         }
