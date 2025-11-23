@@ -23,9 +23,15 @@ namespace SauceDemoAutomation.Pages
 
         public void EnterCheckoutInfo(string firstName, string lastName, string postalCode)
         {
+            FirstName.Clear();
             FirstName.SendKeys(firstName);
+
+            LastName.Clear();
             LastName.SendKeys(lastName);
+
+            PostalCode.Clear();
             PostalCode.SendKeys(postalCode);
+
             ContinueButton.Click();
         }
     }
